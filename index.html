@@ -80,6 +80,8 @@
             font-family: 'Nunito', sans-serif;
             color: var(--text-dark);
             background-color: var(--bg-light);
+            background-image: radial-gradient(rgba(26, 75, 132, 0.08) 1.5px, transparent 1.5px);
+            background-size: 24px 24px;
             line-height: 1.6;
             overflow-x: hidden;
         }
@@ -90,8 +92,10 @@
 
         /* Navigation */
         nav {
-            background-color: var(--text-light);
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            background-color: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -124,8 +128,8 @@
 
         .nav-links a:hover { color: var(--primary-blue); }
 
-        .cta-btn {
-            background-color: var(--accent-red);
+        .btn.cta-btn {
+            background-color: var(--accent-red) !important;
             color: var(--text-light) !important;
             padding: 10px 24px;
             border-radius: 50px;
@@ -133,12 +137,24 @@
             transition: all 0.3s ease;
         }
 
-        .cta-btn:hover {
+        .btn.cta-btn:hover {
+            background-color: #C82B38 !important;
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(230, 57, 70, 0.3);
         }
 
         .menu-toggle { display: none; }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
         /* Hero Section */
         .hero {
@@ -150,7 +166,11 @@
             gap: 40px;
         }
 
-        .hero-content { flex: 1; }
+        .hero-content {
+            flex: 1;
+            opacity: 0;
+            animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
 
         .hero h1 {
             font-size: 3rem;
@@ -173,6 +193,8 @@
             max-width: 500px;
             border-radius: 24px;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+            opacity: 0;
+            animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
         }
 
         .btn {
