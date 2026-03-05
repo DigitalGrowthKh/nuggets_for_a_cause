@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100" width="300" height="100">
+  <rect width="300" height="100" rx="8" fill="#e85d04"/>
+  <text x="20" y="58" font-family="system-ui,sans-serif" font-size="28" font-weight="800" fill="#fff">Nuggets</text>
+  <text x="20" y="82" font-family="system-ui,sans-serif" font-size="16" font-weight="400" fill="rgba(255,255,255,.8)">for a Cause</text>
+</svg>

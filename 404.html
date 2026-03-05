@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Page Not Found | Nuggets for a Cause</title>
+  <meta name="description" content="The page you're looking for doesn't exist. Return to the Nuggets for a Cause homepage or explore other sections of our site.">
+  <meta name="robots" content="noindex, nofollow">
+
+  <link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#e85d04">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <nav class="nav-wrapper" aria-label="Primary navigation">
+        <a href="index.html" class="site-logo" aria-label="Nuggets for a Cause — Home">
+          <img src="img/logo.png" alt="" width="40" height="40" aria-hidden="true">
+          <span>Nuggets for a Cause<span class="logo-tagline">Fundraising for Change</span></span>
+        </a>
+        <button class="menu-toggle" aria-label="Toggle navigation menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+        <ul class="primary-nav" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="impact.html">Impact</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-cta"><a href="donate.html" class="btn btn-primary">Donate Now</a></div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div class="container error-page">
+      <p class="error-code" aria-hidden="true">404</p>
+      <h1>Page Not Found</h1>
+      <p class="text-lead">Oops! The page you're looking for doesn't seem to exist.</p>
+      <p style="color:var(--color-text-muted);max-width:480px;margin-inline:auto;">It may have been moved, deleted, or the URL might be wrong. Let's get you back on track.</p>
+
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:2rem;">
+        <a href="index.html" class="btn btn-primary btn-lg">Go to Homepage</a>
+        <a href="contact.html" class="btn btn-secondary btn-lg">Report a Broken Link</a>
+      </div>
+
+      <div style="margin-top:3rem;">
+        <p style="font-weight:700;margin-bottom:1rem;">Or explore these sections:</p>
+        <div style="display:flex;flex-wrap:wrap;gap:.75rem;justify-content:center;">
+          <a href="about.html" class="btn btn-secondary btn-sm">About Us</a>
+          <a href="donate.html" class="btn btn-secondary btn-sm">Donate</a>
+          <a href="events.html" class="btn btn-secondary btn-sm">Events</a>
+          <a href="impact.html" class="btn btn-secondary btn-sm">Our Impact</a>
+          <a href="faq.html" class="btn btn-secondary btn-sm">FAQ</a>
+          <a href="blog.html" class="btn btn-secondary btn-sm">Blog</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="index.html" class="site-logo" aria-label="Nuggets for a Cause — Home"><img src="img/logo-white.png" alt="" width="36" height="36" aria-hidden="true"> Nuggets for a Cause</a><p class="footer-tagline">[Your tagline]</p></div>
+        <nav aria-label="Quick links"><h3 class="footer-heading">Quick Links</h3><ul class="footer-nav" role="list"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="donate.html">Donate</a></li><li><a href="events.html">Events</a></li><li><a href="impact.html">Our Impact</a></li></ul></nav>
+        <nav aria-label="Resources links"><h3 class="footer-heading">Resources</h3><ul class="footer-nav" role="list"><li><a href="blog.html">Blog</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="terms-of-service.html">Terms of Service</a></li></ul></nav>
+        <div><h3 class="footer-heading">Contact Us</h3><address style="font-style:normal;font-size:.875rem;opacity:.8;line-height:1.8;"><p>[Organization Name]</p><p><a href="mailto:hello@nuggetsforacause.org" style="color:rgba(255,255,255,.7);">hello@nuggetsforacause.org</a></p></address></div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="footer-year"></span> Nuggets for a Cause. All rights reserved.</p>
+        <ul class="footer-legal" role="list"><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="terms-of-service.html">Terms of Service</a></li><li><a href="sitemap.xml">Sitemap</a></li></ul>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

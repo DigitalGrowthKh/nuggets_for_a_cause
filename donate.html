@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Donate | Nuggets for a Cause</title>
+  <meta name="description" content="Make a donation to Nuggets for a Cause. Choose your amount, give once or monthly, and see the direct impact of your generosity on [Your Cause].">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.nuggetsforacause.org/donate.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.nuggetsforacause.org/donate.html">
+  <meta property="og:title" content="Donate | Nuggets for a Cause">
+  <meta property="og:description" content="Every dollar makes a difference. Donate to Nuggets for a Cause today.">
+  <meta property="og:image" content="https://www.nuggetsforacause.org/img/og-donate.jpg">
+  <meta property="og:site_name" content="Nuggets for a Cause">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Donate | Nuggets for a Cause">
+  <meta name="twitter:description" content="Every dollar makes a difference. Donate to Nuggets for a Cause today.">
+  <meta name="twitter:image" content="https://www.nuggetsforacause.org/img/og-donate.jpg">
+
+  <!-- Favicon & PWA -->
+  <link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#e85d04">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Structured Data: DonateAction -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://www.nuggetsforacause.org/donate.html#webpage",
+        "url": "https://www.nuggetsforacause.org/donate.html",
+        "name": "Donate | Nuggets for a Cause",
+        "description": "Make a donation to Nuggets for a Cause.",
+        "isPartOf": { "@id": "https://www.nuggetsforacause.org/#website" },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.nuggetsforacause.org/" },
+            { "@type": "ListItem", "position": 2, "name": "Donate", "item": "https://www.nuggetsforacause.org/donate.html" }
+          ]
+        }
+      },
+      {
+        "@type": "DonateAction",
+        "agent": { "@id": "https://www.nuggetsforacause.org/#organization" },
+        "recipient": { "@id": "https://www.nuggetsforacause.org/#organization" },
+        "url": "https://www.nuggetsforacause.org/donate.html"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <nav class="nav-wrapper" aria-label="Primary navigation">
+        <a href="index.html" class="site-logo" aria-label="Nuggets for a Cause — Home">
+          <img src="img/logo.png" alt="" width="40" height="40" aria-hidden="true">
+          <span>Nuggets for a Cause<span class="logo-tagline">Fundraising for Change</span></span>
+        </a>
+        <button class="menu-toggle" aria-label="Toggle navigation menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+        <ul class="primary-nav" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="impact.html">Impact</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-cta"><a href="donate.html" class="btn btn-primary" aria-current="page">Donate Now</a></div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container">
+        <nav aria-label="Breadcrumb">
+          <ol class="breadcrumb" style="justify-content:center;color:rgba(255,255,255,.7);">
+            <li><a href="index.html" style="color:rgba(255,255,255,.7);">Home</a></li>
+            <li><span aria-current="page">Donate</span></li>
+          </ol>
+        </nav>
+        <h1 id="page-title">Make a Difference Today</h1>
+        <p>Your donation — big or small — directly supports [Your Cause]. Choose an amount and see your impact.</p>
+      </div>
+    </section>
+
+    <!-- Fundraising progress bar -->
+    <div style="background:var(--color-bg-alt);padding:1.5rem 0;border-bottom:1px solid var(--color-border);" role="region" aria-label="Current fundraising progress">
+      <div class="container">
+        <div style="max-width:700px;margin-inline:auto;">
+          <div style="display:flex;justify-content:space-between;margin-bottom:.5rem;">
+            <span><strong style="font-size:1.5rem;color:var(--color-primary);">$[RAISED]</strong> raised</span>
+            <span style="color:var(--color-text-muted);">Goal: <strong>$[GOAL]</strong></span>
+          </div>
+          <div class="progress-bar" role="progressbar" aria-valuenow="[PERCENT]" aria-valuemin="0" aria-valuemax="100" style="height:12px;background:#ddd;border-radius:999px;overflow:hidden;">
+            <div class="progress-bar-fill" data-progress="[PERCENT]" style="height:100%;background:var(--color-primary);border-radius:999px;"></div>
+          </div>
+          <div style="display:flex;justify-content:space-between;margin-top:.5rem;font-size:.875rem;color:var(--color-text-muted);">
+            <span>[PERCENT]% funded</span>
+            <span>[DONORS] donors · [DAYS_LEFT] days left</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Donation Form -->
+    <section class="section" aria-labelledby="donate-heading">
+      <div class="container">
+        <div class="donation-layout">
+
+          <!-- Form Column -->
+          <div>
+            <h2 id="donate-heading" class="section-title">Complete Your Donation</h2>
+
+            <form id="donation-form" novalidate action="#" method="post">
+              <!-- Frequency -->
+              <fieldset style="border:none;padding:0;margin-bottom:1.5rem;">
+                <legend style="font-weight:700;margin-bottom:.75rem;">Donation Frequency</legend>
+                <div style="display:flex;gap:1rem;">
+                  <label style="display:flex;align-items:center;gap:.5rem;cursor:pointer;">
+                    <input type="radio" name="frequency" value="once" checked> Give Once
+                  </label>
+                  <label style="display:flex;align-items:center;gap:.5rem;cursor:pointer;">
+                    <input type="radio" name="frequency" value="monthly"> Give Monthly
+                  </label>
+                </div>
+              </fieldset>
+
+              <!-- Amount selection -->
+              <div class="form-group">
+                <p style="font-weight:700;margin-bottom:.75rem;">Select an Amount</p>
+                <div class="amount-grid">
+                  <button type="button" class="amount-btn" data-amount="10">$10</button>
+                  <button type="button" class="amount-btn" data-amount="25">$25</button>
+                  <button type="button" class="amount-btn selected" data-amount="50">$50</button>
+                  <button type="button" class="amount-btn" data-amount="100">$100</button>
+                  <button type="button" class="amount-btn" data-amount="250">$250</button>
+                  <button type="button" class="amount-btn" data-amount="custom">Other</button>
+                </div>
+                <input type="hidden" id="donation-amount-value" name="amount" value="50">
+                <label for="custom-amount" class="sr-only">Custom amount in USD</label>
+                <input type="number" id="custom-amount" name="custom_amount" class="form-input" placeholder="Enter custom amount ($)" min="1" step="1" style="margin-top:.75rem;">
+                <p class="form-hint">Minimum donation: $1.00 USD</p>
+              </div>
+
+              <!-- Donor Information -->
+              <h3 style="font-size:1.1rem;margin-bottom:1.25rem;padding-top:.5rem;border-top:1px solid var(--color-border);">Your Information</h3>
+
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+                <div class="form-group">
+                  <label for="first-name" class="form-label">First Name <span class="required" aria-hidden="true">*</span></label>
+                  <input type="text" id="first-name" name="first_name" class="form-input" required autocomplete="given-name" aria-required="true">
+                  <p class="form-error" data-error-for="first-name" role="alert"></p>
+                </div>
+                <div class="form-group">
+                  <label for="last-name" class="form-label">Last Name <span class="required" aria-hidden="true">*</span></label>
+                  <input type="text" id="last-name" name="last_name" class="form-input" required autocomplete="family-name" aria-required="true">
+                  <p class="form-error" data-error-for="last-name" role="alert"></p>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address <span class="required" aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" class="form-input" required autocomplete="email" aria-required="true">
+                <p class="form-error" data-error-for="email" role="alert"></p>
+                <p class="form-hint">Your receipt and updates will be sent to this address.</p>
+              </div>
+
+              <div class="form-group">
+                <label for="phone" class="form-label">Phone Number <span style="color:var(--color-text-muted);font-weight:400;">(optional)</span></label>
+                <input type="tel" id="phone" name="phone" class="form-input" autocomplete="tel">
+              </div>
+
+              <!-- Payment -->
+              <h3 style="font-size:1.1rem;margin-bottom:1.25rem;padding-top:.5rem;border-top:1px solid var(--color-border);">Payment Details</h3>
+
+              <div class="alert alert-info" role="note">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true" style="flex-shrink:0;"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                <p><strong>Payment gateway placeholder.</strong> Integrate your preferred payment processor here (e.g., Stripe, PayPal, Square, Braintree, or Give WP).</p>
+              </div>
+
+              <div id="payment-fields-placeholder" style="border:2px dashed var(--color-border);border-radius:8px;padding:2rem;text-align:center;color:var(--color-text-muted);margin-bottom:1.5rem;">
+                <p>💳 Payment fields will appear here once a payment gateway is integrated.</p>
+                <p style="font-size:.875rem;">Recommended: <strong>Stripe</strong>, <strong>PayPal</strong>, <strong>Square</strong></p>
+              </div>
+
+              <!-- Optional message -->
+              <div class="form-group">
+                <label for="donor-message" class="form-label">Leave a Message <span style="color:var(--color-text-muted);font-weight:400;">(optional)</span></label>
+                <textarea id="donor-message" name="message" class="form-textarea" placeholder="Share why you're donating or send a message of encouragement…"></textarea>
+              </div>
+
+              <!-- Anonymous option -->
+              <div class="form-group" style="display:flex;align-items:center;gap:.75rem;">
+                <input type="checkbox" id="anonymous" name="anonymous" style="width:18px;height:18px;">
+                <label for="anonymous">Make my donation anonymous</label>
+              </div>
+
+              <!-- Newsletter opt-in -->
+              <div class="form-group" style="display:flex;align-items:center;gap:.75rem;">
+                <input type="checkbox" id="newsletter-opt" name="newsletter" checked style="width:18px;height:18px;">
+                <label for="newsletter-opt">Send me fundraising updates and impact stories</label>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg" style="width:100%;">
+                Complete Donation
+              </button>
+
+              <p style="font-size:.8rem;color:var(--color-text-muted);text-align:center;margin-top:1rem;">
+                🔒 Secure &amp; encrypted. Your information is safe with us.<br>
+                By donating you agree to our <a href="terms-of-service.html">Terms</a> and <a href="privacy-policy.html">Privacy Policy</a>.
+              </p>
+            </form>
+          </div>
+
+          <!-- Sidebar -->
+          <aside class="donation-sidebar" aria-label="Donation information">
+            <div class="donation-summary-card">
+              <h3 style="font-size:1.1rem;margin-bottom:1.25rem;">Donation Summary</h3>
+              <div style="display:flex;justify-content:space-between;margin-bottom:.75rem;">
+                <span>Amount:</span>
+                <strong id="summary-amount">$50.00</strong>
+              </div>
+              <div style="display:flex;justify-content:space-between;margin-bottom:.75rem;">
+                <span>Frequency:</span>
+                <strong>One-time</strong>
+              </div>
+              <hr style="margin-block:1rem;border-color:var(--color-border);">
+              <p style="font-size:.875rem;color:var(--color-text-muted);">100% of your donation goes directly to [Your Cause]. We are a registered [501(c)(3) / charity].</p>
+            </div>
+
+            <div style="margin-top:1.5rem;">
+              <h3 style="font-size:1rem;margin-bottom:1rem;">Why Your Donation Matters</h3>
+              <ul style="list-style:none;padding:0;font-size:.875rem;">
+                <li style="display:flex;gap:.75rem;margin-bottom:.75rem;">
+                  <span aria-hidden="true">✓</span>
+                  <span>[Describe impact of a small donation — e.g., "$10 provides school supplies for one child"]</span>
+                </li>
+                <li style="display:flex;gap:.75rem;margin-bottom:.75rem;">
+                  <span aria-hidden="true">✓</span>
+                  <span>[Describe impact of a medium donation — e.g., "$25 covers a week of meals for a family"]</span>
+                </li>
+                <li style="display:flex;gap:.75rem;margin-bottom:.75rem;">
+                  <span aria-hidden="true">✓</span>
+                  <span>[Describe impact of a larger donation — e.g., "$50 funds a full workshop session"]</span>
+                </li>
+                <li style="display:flex;gap:.75rem;">
+                  <span aria-hidden="true">✓</span>
+                  <span>[Describe impact of $100+ — e.g., "$100 sponsors an entire community event"]</span>
+                </li>
+              </ul>
+            </div>
+
+            <div style="margin-top:1.5rem;background:#f0fdf4;border:1px solid #bbf7d0;border-radius:8px;padding:1rem;">
+              <p style="font-size:.875rem;margin:0;"><strong>Tax Deductible:</strong> Nuggets for a Cause is a registered [501(c)(3)] organization. Your donation may be tax-deductible. You will receive a receipt by email.</p>
+            </div>
+
+            <div style="margin-top:1.5rem;text-align:center;font-size:.875rem;color:var(--color-text-muted);">
+              <p>Other ways to give:</p>
+              <p><a href="contact.html">By check</a> · <a href="contact.html">By phone</a> · <a href="contact.html">Corporate matching</a></p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="index.html" class="site-logo" aria-label="Nuggets for a Cause — Home"><img src="img/logo-white.png" alt="" width="36" height="36" aria-hidden="true"> Nuggets for a Cause</a><p class="footer-tagline">[Your tagline]</p></div>
+        <nav aria-label="Quick links"><h3 class="footer-heading">Quick Links</h3><ul class="footer-nav" role="list"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="donate.html">Donate</a></li><li><a href="events.html">Events</a></li><li><a href="impact.html">Our Impact</a></li></ul></nav>
+        <nav aria-label="Resources links"><h3 class="footer-heading">Resources</h3><ul class="footer-nav" role="list"><li><a href="blog.html">Blog</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="terms-of-service.html">Terms of Service</a></li></ul></nav>
+        <div><h3 class="footer-heading">Contact Us</h3><address style="font-style:normal;font-size:.875rem;opacity:.8;line-height:1.8;"><p>[Organization Name]</p><p>[Street Address]</p><p>[City, State ZIP]</p><p><a href="mailto:hello@nuggetsforacause.org" style="color:rgba(255,255,255,.7);">hello@nuggetsforacause.org</a></p></address></div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="footer-year"></span> Nuggets for a Cause. All rights reserved.</p>
+        <ul class="footer-legal" role="list"><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="terms-of-service.html">Terms of Service</a></li><li><a href="sitemap.xml">Sitemap</a></li></ul>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

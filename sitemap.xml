@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
+<!--
+  XML Sitemap — Nuggets for a Cause
+  SEO: Submit this file to Google Search Console and Bing Webmaster Tools.
+  Update <lastmod> dates whenever page content is significantly changed.
+  Update <changefreq> and <priority> based on how often pages change.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Homepage — highest priority -->
+  <url>
+    <loc>https://www.nuggetsforacause.org/</loc>
+    <lastmod>[YYYY-MM-DD]</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.nuggetsforacause.org/img/og-home.jpg</image:loc>
+      <image:title>Nuggets for a Cause — Fundraising for [Your Cause]</image:title>
+    </image:image>
+  </url>
+
+  <!-- About -->
+  <url>
+    <loc>https://www.nuggetsforacause.org/about.html</loc>
+    <lastmod>[YYYY-MM-DD]</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Donate — high priority (conversion page) -->
+  <url>
+    <loc>https://www.nuggetsforacause.org/donate.html</loc>
+    <lastmod>[YYYY-MM-DD]</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Events -->
+  <url>
+    <loc>https://www.nuggetsforacause.org/events.html</loc>
+    <lastmod>[YYYY-MM-DD]</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Impact -->
+  <url>
+    <loc>https://www.nuggetsforacause.org/impact.html</loc>
+    <lastmod>[YYYY-MM-DD]</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- FAQ — high AEO value -->
+  <url>
+    <loc>https://www.nuggetsforacause.org/faq.html</loc>
+    <lastmod>[YYYY-MM-DD]</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog -->
+  <url>
+    <loc>https://www.nuggetsforacause.org/blog.html</loc>
+    <lastmod>[YYYY-MM-DD]</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://www.nuggetsforacause.org/contact.html</loc>
+    <lastmod>[YYYY-MM-DD]</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Privacy Policy -->
+  <url>
+    <loc>https://www.nuggetsforacause.org/privacy-policy.html</loc>
+    <lastmod>[YYYY-MM-DD]</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Terms of Service -->
+  <url>
+    <loc>https://www.nuggetsforacause.org/terms-of-service.html</loc>
+    <lastmod>[YYYY-MM-DD]</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!--
+    Add individual blog post URLs here as you publish them:
+    <url>
+      <loc>https://www.nuggetsforacause.org/blog/[post-slug].html</loc>
+      <lastmod>[YYYY-MM-DD]</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.6</priority>
+    </url>
+  -->
+
+</urlset>

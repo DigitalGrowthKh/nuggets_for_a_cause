@@ -1,0 +1,17 @@
+/* humans.txt — nuggetsforacause.org */
+/* Authorship, technology, and contact information */
+
+/* TEAM */
+  Name: [Your Name / Team Name]
+  Site: https://www.nuggetsforacause.org/
+  Location: [City, State, Country]
+
+/* THANKS */
+  Contributors, volunteers, and donors who make this work possible.
+
+/* SITE */
+  Last update: [YYYY-MM-DD]
+  Language: English
+  Standards: HTML5, CSS3, ARIA, JSON-LD / Schema.org
+  Components: Vanilla JS, Schema.org structured data
+  Software: Built with love ♥

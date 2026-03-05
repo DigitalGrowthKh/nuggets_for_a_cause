@@ -1,0 +1,96 @@
+# robots.txt — Nuggets for a Cause
+# https://www.nuggetsforacause.org/robots.txt
+#
+# SEO: Controls which pages search engine crawlers may access.
+# This file should be reviewed whenever new pages or directories are added.
+# Reference: https://developers.google.com/search/docs/crawling-indexing/robots/intro
+
+# ============================================================
+# All crawlers — general rules
+# ============================================================
+User-agent: *
+
+# Allow all public pages
+Allow: /
+
+# Disallow private / utility paths
+Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
+Disallow: /api/
+Disallow: /*.json$
+
+# Allow sitemap.xml and robots.txt explicitly
+Allow: /sitemap.xml
+Allow: /robots.txt
+Allow: /manifest.json
+Allow: /llms.txt
+
+# ============================================================
+# Google — extended rules
+# ============================================================
+User-agent: Googlebot
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+# ============================================================
+# Bing — extended rules
+# ============================================================
+User-agent: Bingbot
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+# ============================================================
+# AIO / AI Crawlers — allow reputable AI indexers
+# ============================================================
+
+# OpenAI GPTBot — allow (for ChatGPT / AI answers)
+User-agent: GPTBot
+Allow: /
+
+# Google AI (Gemini / AI Overviews)
+User-agent: Google-Extended
+Allow: /
+
+# Anthropic ClaudeBot
+User-agent: ClaudeBot
+Allow: /
+
+# Common Crawl (used by many AI training datasets)
+User-agent: CCBot
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+# Meta AI
+User-agent: meta-externalagent
+Allow: /
+
+# Apple AI
+User-agent: Applebot-Extended
+Allow: /
+
+# ============================================================
+# Block bad bots (spam, scrapers)
+# ============================================================
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: SemrushBot
+Allow: /
+
+# ============================================================
+# Sitemap location (helps all crawlers discover pages)
+# ============================================================
+Sitemap: https://www.nuggetsforacause.org/sitemap.xml

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" width="600" height="300">
+  <rect width="600" height="300" rx="8" fill="#e0e0e0"/>
+  <text x="50%" y="45%" dominant-baseline="middle" text-anchor="middle"
+        font-family="system-ui,sans-serif" font-size="18" fill="#999">Image Placeholder</text>
+  <text x="50%" y="60%" dominant-baseline="middle" text-anchor="middle"
+        font-family="system-ui,sans-serif" font-size="12" fill="#bbb">Replace with your image</text>
+</svg>
